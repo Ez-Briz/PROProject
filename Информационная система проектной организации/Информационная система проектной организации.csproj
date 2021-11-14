@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{821BDCCD-36DF-45F1-8E36-8D8C8EEE67B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Информационная_система_проектной_организации</RootNamespace>
+    <AssemblyName>Информационная система проектной организации</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>21236357501580301732-64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomElements\Animation\Animation.cs" />
+    <Compile Include="CustomElements\Animation\Animator.cs" />
+    <Compile Include="CustomElements\proj_line.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomElements\proj_button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewContrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewContrForm.Designer.cs">
+      <DependentUpon>RegNewContrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewProjToContrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewProjToContrForm.Designer.cs">
+      <DependentUpon>RegNewProjToContrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewOtdelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewOtdelForm.Designer.cs">
+      <DependentUpon>RegNewOtdelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewItemForm.Designer.cs">
+      <DependentUpon>RegNewItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewEmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewEmpForm.Designer.cs">
+      <DependentUpon>RegNewEmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewSubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewSubForm.Designer.cs">
+      <DependentUpon>RegNewSubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthForms\ResetPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthForms\ResetPassForm.designer.cs">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageEmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageEmpForm.Designer.cs">
+      <DependentUpon>ManageEmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageOtdelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageOtdelForm.Designer.cs">
+      <DependentUpon>ManageOtdelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\UseItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\UseItemForm.Designer.cs">
+      <DependentUpon>UseItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageItemForm.Designer.cs">
+      <DependentUpon>ManageItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageSubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ManageSubForm.Designer.cs">
+      <DependentUpon>ManageSubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ShowAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagementPanels\ShowAllForm.Designer.cs">
+      <DependentUpon>ShowAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowInfoForm.Designer.cs">
+      <DependentUpon>ShowInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewProjForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddForms\RegNewProjForm.Designer.cs">
+      <DependentUpon>RegNewProjForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsefullFuncs.cs" />
+    <Compile Include="Forms\AuthForms\RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthForms\RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthForms\LogAdmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthForms\LogAdmForm.Designer.cs">
+      <DependentUpon>LogAdmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddForms\RegNewContrForm.resx">
+      <DependentUpon>RegNewContrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewProjToContrForm.resx">
+      <DependentUpon>RegNewProjToContrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewOtdelForm.resx">
+      <DependentUpon>RegNewOtdelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewItemForm.resx">
+      <DependentUpon>RegNewItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewEmpForm.resx">
+      <DependentUpon>RegNewEmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewSubForm.resx">
+      <DependentUpon>RegNewSubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthForms\ResetPassForm.resx">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\ManageEmpForm.resx">
+      <DependentUpon>ManageEmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\ManageOtdelForm.resx">
+      <DependentUpon>ManageOtdelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\UseItemForm.resx">
+      <DependentUpon>UseItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\ManageItemForm.resx">
+      <DependentUpon>ManageItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\ManageSubForm.resx">
+      <DependentUpon>ManageSubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagementPanels\ShowAllForm.resx">
+      <DependentUpon>ShowAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddForms\RegNewProjForm.resx">
+      <DependentUpon>RegNewProjForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthForms\RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthForms\LogAdmForm.resx">
+      <DependentUpon>LogAdmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowInfoForm.resx">
+      <DependentUpon>ShowInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="MainDBDataSet.xsc">
+      <DependentUpon>MainDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MainDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MainDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MainDBDataSet.xss">
+      <DependentUpon>MainDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="21236357501580301732-64.ico" />
+    <Content Include="MainDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>MainDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Информационная_система_проектной_организации.CustomElements.Animation">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Информационная_система_проектной_организации.CustomElements.Animation.AnimStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CustomElements\Animation\Animation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Информационная_система_проектной_организации.CustomElements.Animation.ControlMethod" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CustomElements\Animation\Animation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAAAgAQAACAAAAAAAAAAAAQAIAIiAAAAAEA=</HashCode>
+      <FileName>CustomElements\Animation\Animation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.CustomElements.Animator">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAgACAAAAAAAIAAAAQAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>CustomElements\Animation\Animator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.CustomElements.proj_button">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgDIBAAJAAABAAAAAABAICCAAQIAAAAAIAAAAAACAAA=</HashCode>
+      <FileName>CustomElements\proj_button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.CustomElements.proj_line">
+    <Position X="7.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomElements\proj_line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewContrForm">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAIACACAJgAAAiAQhQCCAAAAAgAEGCAKSCAAww=</HashCode>
+      <FileName>Forms\AddForms\RegNewContrForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewEmpForm">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAMIAIADACAIgAgAiCQpQCKJQCAAgAEHCACSCCAyg=</HashCode>
+      <FileName>Forms\AddForms\RegNewEmpForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewItemForm">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAMAAAACACAIAAAACAQhACSAAAAAgAEECAACCACwg=</HashCode>
+      <FileName>Forms\AddForms\RegNewItemForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewOtdelForm">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAIACACAIgAAQiAQhQCCAAAAAgAEGCAKSCAAwg=</HashCode>
+      <FileName>Forms\AddForms\RegNewOtdelForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewProjForm">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACwAIIAKACACgIwAAQiCQhQGCEAAAAgAEHCACSCgAwg=</HashCode>
+      <FileName>Forms\AddForms\RegNewProjForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewProjToContrForm">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAEAACACAIoAABiAQhQCAIAAAAgAEECIAACAAgg=</HashCode>
+      <FileName>Forms\AddForms\RegNewProjToContrForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegNewSubForm">
+    <Position X="12.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAMAAAACACAIogAACAQhICCAAAAAgAEECAoCCAAwg=</HashCode>
+      <FileName>Forms\AddForms\RegNewSubForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.LogAdmForm">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIlQAECACAJAAIACAShADACAAAABAEWCAIIDAggg=</HashCode>
+      <FileName>Forms\AuthForms\LogAdmForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.RegForm">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIkAEACACAJACIBCgRhASACAAAABAGECAQICAAgg=</HashCode>
+      <FileName>Forms\AuthForms\RegForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ResetPassForm">
+    <Position X="14.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAIFAAACACCIAAJACAAhACAAAIISxAEGCAAgCAigA=</HashCode>
+      <FileName>Forms\AuthForms\ResetPassForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ManageEmpForm">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAoAMIACBSBIgigBCCRhADDBAIAAqAEECAQiCCAig=</HashCode>
+      <FileName>Forms\ManagementPanels\ManageEmpForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ManageItemForm">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAMAACBCBIgCABCAQhACDAAIAAoAEECAQgCACgg=</HashCode>
+      <FileName>Forms\ManagementPanels\ManageItemForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ManageOtdelForm">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAoAMAACBCBIoiABCAwhACDAAIAAoAEECAYiCAAgg=</HashCode>
+      <FileName>Forms\ManagementPanels\ManageOtdelForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ManageSubForm">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAoAMAACBCBIgiABCAQhACDAAIAAoAEECAYgCAAhg=</HashCode>
+      <FileName>Forms\ManagementPanels\ManageSubForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.UseItemForm">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAMAACACAJgCABCAQhACCAAICAoAEECAAQCACgg=</HashCode>
+      <FileName>Forms\ManagementPanels\UseItemForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ShowAllForm">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAoAMMQCBChIgigBCEQnAKBAhIQRoAGECISCCgAkg=</HashCode>
+      <FileName>Forms\ManagementPanels\ShowAllForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.AdminForm">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECIAAIBAACACAIgAICiAQjWCR4AEAAhIMGCKAPCAAgg=</HashCode>
+      <FileName>Forms\AdminForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.ShowInfoForm">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIgEAACACAIAAAACoQhACAAAAAAAAEECAAACAAgg=</HashCode>
+      <FileName>Forms\ShowInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Информационная_система_проектной_организации.UsefullFuncs">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAEAAAAAAAABAAAAAAgAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>UsefullFuncs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
