@@ -81,7 +81,7 @@ namespace Информационная_система_проектной_орг�
                 message.Body = Message;
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
                 smtp.EnableSsl = true;
-                smtp.Credentials = new NetworkCredential("skypeformyass@gmail.com", "EzNekit123");
+                smtp.Credentials = new NetworkCredential("skypeformyass@gmail.com", ""); // Any mail
                 smtp.Send(message);
             }
             catch (Exception ex)

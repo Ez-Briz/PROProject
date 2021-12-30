@@ -85,9 +85,7 @@ namespace Информационная_система_проектной_орг�
         private void RegisterNewItem()
         {
             const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
-                    @"'D:\!ПРОЕКТ ПО РПО\Информационная система проектной организации\"+
-                    @"Информационная система проектной организации\MainDB.mdf';"+
-                    @"Integrated Security=True";
+                    @"'|DataDirectory|\MainDB.mdf'";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try

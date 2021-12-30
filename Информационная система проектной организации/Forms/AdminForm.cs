@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Информационная_система_проектной_организации
 {
@@ -10,9 +11,7 @@ namespace Информационная_система_проектной_орг�
     {
         UsefullFuncs uff;
         const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
-                    @"'D:\!ПРОЕКТ ПО РПО\Информационная система проектной организации\" +
-                    @"Информационная система проектной организации\MainDB.mdf';" +
-                    @"Integrated Security=True";
+                    @"'|DataDirectory|\MainDB.mdf'";
         public AdminForm()
         {
             InitializeComponent();
@@ -278,7 +277,7 @@ namespace Информационная_система_проектной_орг�
                             list.Add(dr.GetString(0).Trim());
                         }
                         if (list.Count != 0)
-                            ShowDialog(new ShowInfoForm(list, "Руководители суборганизаций"));
+                            ShowDialog(new ShowInfoForm(list.Distinct(), "Руководители суборганизаций"));
                         else
                             MessageBox.Show("Не найдено ни одного руководителя субподрядных организаций!",
                                 "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -499,7 +498,7 @@ namespace Информационная_система_проектной_орг�
                             list.Add(dr.GetString(0).Trim());
                         }
                         if (list.Count != 0)
-                            ShowDialog(new ShowInfoForm(list, "Руководители отделов"));
+                            ShowDialog(new ShowInfoForm(list.Distinct(), "Руководители отделов"));
                         else
                             MessageBox.Show("Не найдено ни одного руководителя отделов!",
                                 "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -534,7 +533,7 @@ namespace Информационная_система_проектной_орг�
                             list.Add(dr.GetString(0).Trim());
                         }
                         if (list.Count != 0)
-                            ShowDialog(new ShowInfoForm(list, "Руководители договоров"));
+                            ShowDialog(new ShowInfoForm(list.Distinct(), "Руководители договоров"));
                         else
                             MessageBox.Show("Не найдено ни одного руководителя договоров!",
                                 "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);

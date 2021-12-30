@@ -9,9 +9,7 @@ namespace Информационная_система_проектной_орг�
     {
         UsefullFuncs uff;
         string sqlConnectionCmd = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
-                    @"'D:\!ПРОЕКТ ПО РПО\Информационная система проектной организации\" +
-                    @"Информационная система проектной организации\MainDB.mdf';" +
-                    @"Integrated Security=True";
+                    @"'|DataDirectory|\MainDB.mdf'";
 
         public LogAdmForm()
         {

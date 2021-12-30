@@ -14,10 +14,8 @@ namespace Информационная_система_проектной_орг�
         const int maxPassLength = 50;
         string resetcode = "";
         string password = "";
-        string sqlConnectionCmd =  @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
-                    @"'D:\!ПРОЕКТ ПО РПО\Информационная система проектной организации\" +
-                    @"Информационная система проектной организации\MainDB.mdf';" +
-                    @"Integrated Security=True";
+        string sqlConnectionCmd = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
+                    @"'|DataDirectory|\MainDB.mdf'";
         readonly Color moveUpColor;
         public ResetPassForm()
         {
@@ -72,7 +70,7 @@ namespace Информационная_система_проектной_орг�
                         password = dr.GetValue(1).ToString();
                         resetcode = rand.Next(1000, 10000).ToString();
                         string message = "Your recovery code - " + resetcode.ToString() + "\nNOTIFICATION:\n" +
-                            "If you are not requesting recovery code - just ignore this message.";
+                            "If you are not requested recovery code - just ignore this message.";
                         uff.SendMail(message, emailTextBox.Text, "Password reminder");
 
                     }
